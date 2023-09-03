@@ -1,0 +1,65 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        padding: 10px;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar.active ul {
+        display: block;
+    }
+
+    .navbar.active a {
+        padding: 10px 0;
+    }
+
+    .navbar.active li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.menu-toggle{
+    cursor: pointer;
+}
+
+.menu-toggle:hover{
+    background-color: red;
+}
